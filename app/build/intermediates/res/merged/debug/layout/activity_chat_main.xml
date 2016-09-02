@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/weixin_bgcolor"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_11_160"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/common_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/width_3_160"
+            android:src="@drawable/left_white_back"/>
+
+        <TextView
+            android:id="@+id/chat_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_3_160"
+            android:layout_toRightOf="@+id/common_back_iv"
+            android:text="聊天"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+
+            android:id="@+id/chat_person_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/width_3_160"
+            android:src="@drawable/tab_mine_icon"/>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="@null"
+        android:scrollbars="none"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/height_1_160"
+        android:paddingTop="@dimen/height_1_160">
+
+        <EditText
+            android:id="@+id/chat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="4"
+            android:background="@color/white"
+            android:imeOptions="actionSend"
+            android:minHeight="@dimen/height_11_160"
+            android:layout_toLeftOf="@+id/chat_send_btn"
+            android:paddingLeft="@dimen/width_3_160"
+            android:paddingRight="@dimen/width_3_160"
+           />
+
+
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/chat_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_11_160"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/width_2_160"
+            android:layout_marginRight="@dimen/width_2_160"
+            android:background="@drawable/send_btn_bg"
+            android:paddingLeft="@dimen/width_5_160"
+            android:paddingRight="@dimen/width_5_160"
+            android:text="发送"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+</LinearLayout>

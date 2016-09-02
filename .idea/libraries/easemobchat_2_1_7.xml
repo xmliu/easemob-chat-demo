@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="easemobchat_2.1.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/easemobchat_2.1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
