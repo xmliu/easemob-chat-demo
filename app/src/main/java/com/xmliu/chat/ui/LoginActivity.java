@@ -36,7 +36,6 @@ public class LoginActivity extends BaseActivity {
 
 	private EditText mUsernameET;
 	private EditText mPasswordET;
-	private TextView mPasswordForgetTV;
 	private Button mSigninBtn;
 	private TextView mSignupTV;
 	private CheckBox mPasswordCB;
@@ -49,7 +48,6 @@ public class LoginActivity extends BaseActivity {
 
 		mUsernameET = (EditText) findViewById(R.id.chat_login_username);
 		mPasswordET = (EditText) findViewById(R.id.chat_login_password);
-		mPasswordForgetTV = (TextView) findViewById(R.id.chat_login_forget_password);
 		mSigninBtn = (Button) findViewById(R.id.chat_login_signin_btn);
 		mSignupTV = (TextView) findViewById(R.id.chat_login_signup);
 		mPasswordCB = (CheckBox) findViewById(R.id.chat_login_password_checkbox);

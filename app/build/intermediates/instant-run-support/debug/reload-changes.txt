@@ -1,0 +1,11 @@
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\xmliu\chat\ui\HostActivity$override.class
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\xmliu\chat\ui\RegisterActivity$5$override.class
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\xmliu\chat\ui\RegisterActivity$override.class
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\xmliu\chat\R$id$override.class
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\xmliu\chat\ui\RegisterActivity$2$override.class
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\xmliu\chat\ui\RegisterActivity$1$override.class
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\xmliu\chat\ui\RegisterActivity$3$override.class
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\xmliu\chat\ui\RegisterActivity$5$1$override.class
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\roughike\bottombar\R$id$override.class
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\xmliu\chat\ui\RegisterActivity$4$override.class
+CHANGED,D:\XmChat\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

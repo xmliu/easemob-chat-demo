@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.widget.FrameLayout;
 import android.widget.TabHost;
 
 import com.roughike.bottombar.BottomBar;
@@ -26,7 +25,6 @@ public class HostActivity extends FragmentActivity {
 
     private BottomBar bottomBar;
 
-    private FrameLayout contentTV;
     private FragmentTabHost mFragmentTabhost;
 
     public static final String SHOW_OF_CHAT_TAG = "chat";
@@ -38,7 +36,6 @@ public class HostActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_strategy_tab);
         AppManager.getInstance().addActivity(this);
-//        contentTV = (FrameLayout) findViewById(R.id.contentContainer);
         mFragmentTabhost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         bottomBar = (BottomBar) findViewById(R.id.bottomBar);
 
@@ -65,26 +62,19 @@ public class HostActivity extends FragmentActivity {
                 if (tabId == R.id.tab_chat) {
                     Log.i("TAG", "tab_discover");
                     mFragmentTabhost.setCurrentTabByTag(SHOW_OF_CHAT_TAG);
-//                    contentTV.setText("发现");
                 } else if (tabId == R.id.tab_friends) {
                     Log.i("TAG", "tab_friends");
 
                     mFragmentTabhost.setCurrentTabByTag(SHOW_OF_FRIENDS_TAG);
-//                    contentTV.setText("朋友");
                 } else if (tabId == R.id.tab_mine) {
                     Log.i("TAG", "tab_mine");
                     mFragmentTabhost.setCurrentTabByTag(SHOW_OF_MINE_TAG);
-//                    contentTV.setText("我的");
                 }
             }
         });
         bottomBar.setOnTabReselectListener(new OnTabReselectListener() {
             @Override
             public void onTabReSelected(@IdRes int tabId) {
-                if (tabId == R.id.tab_friends) {
-                    // The tab with id R.id.tab_favorites was reselected,
-                    // change your content accordingly.
-                }
             }
         });
     }

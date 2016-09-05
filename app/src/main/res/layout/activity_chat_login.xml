@@ -1,76 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/chat_login_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#131313"
-        android:gravity="center"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:text="User Login For Chat"
-        android:textColor="#fff" />
+
+    <ImageView
+        android:layout_width="@dimen/width_30_160"
+        android:layout_height="@dimen/width_30_160"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_10_160"
+        android:src="@drawable/ic_launcher"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_weight="1"
-        android:background="#1F1F1F"
         android:orientation="vertical"
         android:paddingBottom="30dp"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:paddingTop="60dp" >
+        android:paddingTop="60dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#131313"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/chat_login_username"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="#00000000"
-                android:drawableLeft="@drawable/login_user"
-                android:drawablePadding="5dp"
-                android:ems="10"
-                android:hint="username"
-                android:inputType="textPersonName"
-                android:textColor="#fff"
-                android:textSize="12sp" />
+                android:layout_height="@dimen/height_11_160"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/width_10_160"
+                    android:layout_height="@dimen/width_10_160"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/login_user"/>
+
+                <EditText
+                    android:id="@+id/chat_login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:hint="用户名"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/width_3_160"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
 
             <View
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#000000" />
+                android:layout_height="1px"
+                android:background="@color/grey"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-                <EditText
-                    android:id="@+id/chat_login_password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                android:layout_height="@dimen/height_11_160"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
                     android:layout_weight="1"
-                    android:background="#00000000"
-                    android:drawableLeft="@drawable/login_password"
-                    android:drawablePadding="5dp"
-                    android:ems="10"
-                    android:hint="password"
-                    android:inputType="textPassword"
-                    android:textColor="#fff"
-                    android:textSize="12sp" />
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_11_160"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_10_160"
+                        android:layout_height="@dimen/width_10_160"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/login_password"/>
+
+                    <EditText
+                        android:id="@+id/chat_login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:ems="10"
+                        android:hint="密码"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/width_3_160"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
 
                 <CheckBox
                     android:id="@+id/chat_login_password_checkbox"
@@ -78,7 +102,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="5dp"
-                    android:button="@drawable/password_checkbox" />
+                    android:button="@drawable/password_checkbox"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -87,45 +111,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="#359D90"
+            android:background="@color/colorPrimaryDark"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
-            android:text="Sign In"
-            android:textColor="#fff" />
+            android:text="登陆"
+            android:textColor="#fff"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+
+        <TextView
+            android:id="@+id/chat_login_signup"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal" >
+            android:text="没有账号?注册一个>>"
+            android:textColor="#5D5D5D"
+            android:textSize="12sp"/>
 
-            <TextView
-                android:id="@+id/chat_login_signup0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="have no account?"
-                android:textColor="#5D5D5D"
-                android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/chat_login_signup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/chat_login_signup0"
-                android:text="sign up>>"
-                android:textColor="#6F6F6F"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/chat_login_forget_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="forget password?"
-                android:textColor="#5D5D5D"
-                android:textSize="12sp" />
-        </RelativeLayout>
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

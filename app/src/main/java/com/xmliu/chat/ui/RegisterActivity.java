@@ -15,7 +15,6 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.easemob.EMError;
@@ -33,7 +32,7 @@ public class RegisterActivity extends BaseActivity {
 	private Button mSignupBtn;
 	private Handler mHandler;
 	private CheckBox mPasswordCB;
-	private TextView mBackTV;
+	private ImageView mBackTV;
 	private ImageView mCodeIV;
 	private String currCode;
 
@@ -79,7 +78,7 @@ public class RegisterActivity extends BaseActivity {
 		mCodeET = (EditText) findViewById(R.id.chat_register_code);
 		mSignupBtn = (Button) findViewById(R.id.chat_register_signup_btn);
 		mPasswordCB = (CheckBox) findViewById(R.id.chat_register_password_checkbox);
-		mBackTV = (TextView) findViewById(R.id.chat_register_back);
+		mBackTV = (ImageView) findViewById(R.id.chat_register_back);
 		mCodeIV = (ImageView) findViewById(R.id.chat_register_password_code);
 
 		mCodeIV.setImageBitmap(IdentifyCode.getInstance().createBitmap());

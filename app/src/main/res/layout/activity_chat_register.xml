@@ -1,87 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#131313"
-        android:orientation="vertical" >
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
 
-        <TextView
+        <ImageView
             android:id="@+id/chat_register_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="5dp"
-            android:text="Back"
-            android:textColor="#fff" />
+            android:src="@drawable/left_white_back"
+            android:textColor="#fff"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Sign Up For Chat"
-            android:textColor="#fff" />
+            android:text="新账号"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#1F1F1F"
         android:orientation="vertical"
         android:paddingBottom="30dp"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:paddingTop="60dp" >
+        android:paddingTop="60dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#131313"
-            android:orientation="vertical" >
-
-            <EditText
-                android:id="@+id/chat_register_username"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="#00000000"
-                android:drawableLeft="@drawable/login_user"
-                android:drawablePadding="5dp"
-                android:ems="10"
-                android:hint="username"
-                android:inputType="textPersonName"
-                android:textColor="#fff"
-                android:textSize="12sp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#000000" />
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="@dimen/height_11_160"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/width_10_160"
+                    android:layout_height="@dimen/width_10_160"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/login_user"/>
+
+                <EditText
+                    android:id="@+id/chat_register_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:hint="用户名"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/width_3_160"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_11_160"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/width_10_160"
+                    android:layout_height="@dimen/width_10_160"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/login_password"/>
 
                 <EditText
                     android:id="@+id/chat_register_password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="#00000000"
-                    android:drawableLeft="@drawable/login_password"
-                    android:drawablePadding="5dp"
                     android:ems="10"
-                    android:hint="password"
+                    android:hint="密码"
                     android:inputType="textPassword"
-                    android:textColor="#fff"
-                    android:textSize="12sp" />
+                    android:paddingLeft="@dimen/width_3_160"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
 
                 <CheckBox
                     android:id="@+id/chat_register_password_checkbox"
@@ -89,41 +113,54 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="5dp"
-                    android:button="@drawable/password_checkbox" />
+                    android:button="@drawable/password_checkbox"/>
             </LinearLayout>
 
             <View
-                android:id="@+id/textView2"
+                android:id="@+id/textView1"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#000000" />
+                android:layout_height="1px"
+                android:background="@color/grey"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/chat_register_code"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                <LinearLayout
                     android:layout_weight="1"
-                    android:background="#00000000"
-                    android:drawableLeft="@drawable/register_code_icon"
-                    android:drawablePadding="5dp"
-                    android:ems="10"
-                    android:hint="identity code"
-                    android:inputType="text"
-                    android:textColor="#fff"
-                    android:textSize="12sp" />
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_11_160"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_10_160"
+                        android:layout_height="@dimen/width_10_160"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/register_code_icon"/>
+
+                    <EditText
+                        android:id="@+id/chat_register_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:ems="10"
+                        android:hint="验证码"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/width_3_160"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
 
                 <ImageView
                     android:id="@+id/chat_register_password_code"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/width_15_160"
+                    android:layout_height="@dimen/height_11_160"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -132,19 +169,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="#359D90"
+            android:background="@color/colorPrimaryDark"
+
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
-            android:text="Sign Up"
-            android:textColor="#fff" />
+            android:text="注册"
+            android:textColor="#fff"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="I Agree"
-            android:textColor="#5D5D5D"
-            android:textSize="12sp" />
     </LinearLayout>
 
 </LinearLayout>
