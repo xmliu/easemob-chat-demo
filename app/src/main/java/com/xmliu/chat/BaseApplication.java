@@ -2,6 +2,7 @@ package com.xmliu.chat;
 
 import android.app.ActivityManager;
 import android.app.Application;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.util.Log;
@@ -9,6 +10,11 @@ import android.util.Log;
 import com.easemob.chat.EMChat;
 import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMChatOptions;
+import com.easemob.chat.EMMessage;
+import com.easemob.chat.OnMessageNotifyListener;
+import com.easemob.chat.OnNotificationClickListener;
+import com.easemob.chat.TextMessageBody;
+import com.xmliu.chat.ui.ChatDetailActivity;
 
 import java.util.Iterator;
 import java.util.List;
@@ -68,6 +74,43 @@ public class BaseApplication extends Application {
 		// 默认环信是不维护好友关系列表的，如果app依赖环信的好友关系，把这个属性设置为true
 		options.setUseRoster(true);
 		options.setNumberOfMessagesLoaded(1);
+		//设置自定义的文字提示
+		options.setNotifyText(new OnMessageNotifyListener() {
+
+			@Override
+			public String onNewMessageNotify(EMMessage message) {
+				//可以根据message的类型提示不同文字，这里为一个简单的示例
+				return message.getFrom() + ":"+((TextMessageBody)message.getBody()).getMessage();
+			}
+
+			@Override
+			public String onLatestMessageNotify(EMMessage message, int fromUsersNum, int messageNum) {
+				return fromUsersNum + "个基友，发来了" + messageNum + "条新消息";
+			}
+
+			@Override
+			public String onSetNotificationTitle(EMMessage emMessage) {
+				return null;
+			}
+
+			@Override
+			public int onSetSmallIcon(EMMessage emMessage) {
+				return 0;
+			}
+		});
+		//设置notification点击listener
+		options.setOnNotificationClickListener(new OnNotificationClickListener() {
+
+			@Override
+			public Intent onNotificationClick(EMMessage message) {
+				Intent intent = new Intent(getApplicationContext(), ChatDetailActivity.class);
+				EMMessage.ChatType chatType = message.getChatType();
+				if(chatType == EMMessage.ChatType.Chat){ //单聊信息
+					intent.putExtra("userid", message.getFrom());
+				}
+				return intent;
+			}
+		});
 	}
 
 	private String getAppName(int pID) {
