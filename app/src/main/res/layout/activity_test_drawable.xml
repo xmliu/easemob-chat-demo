@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:padding="@dimen/width_5_160">
+
+    <TextView
+        android:layout_width="@dimen/width_40_160"
+        android:layout_height="@dimen/height_10_160"
+        android:background="@drawable/test_round_corner"
+        android:gravity="center"
+        android:text="圆角矩形"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:layout_width="@dimen/width_50_160"
+        android:layout_height="@dimen/height_10_160"
+        android:layout_marginTop="@dimen/height_3_160"
+        android:background="@drawable/test_round_90"
+        android:gravity="center"
+        android:text="四角角度不同"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="@dimen/width_50_160"
+        android:layout_height="@dimen/width_50_160"
+        android:layout_marginTop="@dimen/height_3_160"
+        android:background="@drawable/test_rounder"
+        android:gravity="center"
+        android:text="圆形"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="@dimen/width_50_160"
+        android:layout_height="@dimen/width_20_160"
+        android:layout_marginTop="@dimen/height_3_160"
+        android:background="@drawable/test_xuxian"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="@dimen/width_50_160"
+        android:layout_height="@dimen/width_20_160"
+        android:layout_marginTop="@dimen/height_3_160"
+        android:background="@drawable/test_xuxian_vertical"
+        android:visibility="gone"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="@dimen/width_50_160"
+        android:layout_height="@dimen/width_20_160"
+        android:layout_marginTop="@dimen/height_3_160"
+        android:background="@drawable/test_open_rect"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="@dimen/width_50_160"
+        android:layout_height="@dimen/height_10_160"
+        android:layout_marginTop="@dimen/height_1_160"
+        android:background="@drawable/test_arrow"/>
+
+    <Button
+        android:gravity="center"
+        android:text="按钮"
+        android:textColor="@color/white"
+        android:layout_width="@dimen/width_50_160"
+        android:layout_height="@dimen/height_10_160"
+        android:layout_marginTop="@dimen/height_1_160"
+        android:background="@drawable/btn_selector2"/>
+</LinearLayout>

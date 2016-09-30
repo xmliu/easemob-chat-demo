@@ -4,6 +4,10 @@
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_open_rect.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\test_open_rect.xml"
+    },
+    {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
@@ -20,8 +24,16 @@
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_round_90.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\test_round_90.xml"
+    },
+    {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\md_item_selected.xml",
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.afollestad.material-dialogs\\core\\0.9.0.1\\res\\drawable\\md_item_selected.xml"
+    },
+    {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_xuxian.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\test_xuxian.xml"
     },
     {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
@@ -124,12 +136,24 @@
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_selector2.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\btn_selector2.xml"
+    },
+    {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\md_btn_selector_dark.xml",
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.afollestad.material-dialogs\\core\\0.9.0.1\\res\\drawable\\md_btn_selector_dark.xml"
     },
     {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\md_transparent.xml",
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.afollestad.material-dialogs\\core\\0.9.0.1\\res\\drawable\\md_transparent.xml"
+    },
+    {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_round_corner.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\test_round_corner.xml"
+    },
+    {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_rounder.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\test_rounder.xml"
     },
     {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
@@ -140,8 +164,16 @@
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_xuxian_vertical.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\test_xuxian_vertical.xml"
+    },
+    {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_round_corner2.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\test_round_corner2.xml"
     },
     {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
@@ -150,6 +182,10 @@
     {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_arrow.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\test_arrow.xml"
     },
     {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
@@ -180,16 +216,20 @@
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_selector.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\btn_selector.xml"
+    },
+    {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\password_checkbox.xml",
-        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\password_checkbox.xml"
-    },
-    {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\md_item_selected_dark.xml",
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.afollestad.material-dialogs\\core\\0.9.0.1\\res\\drawable\\md_item_selected_dark.xml"
+    },
+    {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\password_checkbox.xml",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable\\password_checkbox.xml"
     },
     {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\md_selector.xml",
