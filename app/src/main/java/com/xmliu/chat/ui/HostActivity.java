@@ -1,16 +1,13 @@
 package com.xmliu.chat.ui;
 
 import android.os.Bundle;
-import android.support.annotation.IdRes;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.widget.RadioGroup;
 import android.widget.TabHost;
 
-import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.OnTabReselectListener;
-import com.roughike.bottombar.OnTabSelectListener;
 import com.xmliu.chat.AppManager;
 import com.xmliu.chat.R;
 import com.xmliu.chat.util.XmTools;
@@ -23,21 +20,20 @@ import com.xmliu.chat.util.XmTools;
  */
 public class HostActivity extends FragmentActivity {
 
-    private BottomBar bottomBar;
-
     private FragmentTabHost mFragmentTabhost;
 
     public static final String SHOW_OF_CHAT_TAG = "chat";
     public static final String SHOW_OF_FRIENDS_TAG = "friends";
     public static final String SHOW_OF_MINE_TAG = "mine";
 
+    RadioGroup radioGroup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_strategy_tab);
         AppManager.getInstance().addActivity(this);
         mFragmentTabhost = (FragmentTabHost) findViewById(android.R.id.tabhost);
-        bottomBar = (BottomBar) findViewById(R.id.bottomBar);
+        radioGroup = (RadioGroup) findViewById(R.id.main_radio);
 
         mFragmentTabhost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 
@@ -54,29 +50,24 @@ public class HostActivity extends FragmentActivity {
 
         mFragmentTabhost.setCurrentTabByTag(SHOW_OF_CHAT_TAG);
 
-        bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onTabSelected(@IdRes int tabId) {
-                // The tab with id R.id.tab_favorites was selected,
-                // change your content accordingly.
-                if (tabId == R.id.tab_chat) {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId == R.id.radio_chat) {
                     Log.i("TAG", "tab_discover");
                     mFragmentTabhost.setCurrentTabByTag(SHOW_OF_CHAT_TAG);
-                } else if (tabId == R.id.tab_friends) {
+                } else if (checkedId == R.id.radio_friends) {
                     Log.i("TAG", "tab_friends");
 
                     mFragmentTabhost.setCurrentTabByTag(SHOW_OF_FRIENDS_TAG);
-                } else if (tabId == R.id.tab_mine) {
+                } else if (checkedId == R.id.radio_mine) {
                     Log.i("TAG", "tab_mine");
                     mFragmentTabhost.setCurrentTabByTag(SHOW_OF_MINE_TAG);
                 }
             }
         });
-        bottomBar.setOnTabReselectListener(new OnTabReselectListener() {
-            @Override
-            public void onTabReSelected(@IdRes int tabId) {
-            }
-        });
+
+
     }
 
     @Override

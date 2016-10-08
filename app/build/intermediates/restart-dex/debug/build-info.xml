@@ -4,27 +4,27 @@
     api-level="17"
     density="xhdpi"
     format="7"
-    timestamp="7572722263689"
+    timestamp="26208998995135"
     token="-5586356777318067807" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="478" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="59" />
     <task
         name="verifier"
-        duration="0" />
+        duration="11" />
 
     <artifact
         location="D:\XmChat\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="7572722263689" >
+    <build timestamp="26208998995135" >
         <artifact
             location="D:\XmChat\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />

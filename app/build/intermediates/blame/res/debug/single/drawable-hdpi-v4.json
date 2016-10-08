@@ -40,12 +40,12 @@
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
-        "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png",
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
@@ -124,8 +124,20 @@
         "source": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.afollestad.material-dialogs\\core\\0.9.0.1\\res\\drawable-hdpi-v4\\md_nav_back.png"
     },
     {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_chat_no.png",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable-hdpi\\tab_chat_no.png"
+    },
+    {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_friends_no.png",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable-hdpi\\tab_friends_no.png"
+    },
+    {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_friends_icon.png",
         "source": "D:\\XmChat\\app\\src\\main\\res\\drawable-hdpi\\tab_friends_icon.png"
+    },
+    {
+        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_mine_no.png",
+        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable-hdpi\\tab_mine_no.png"
     },
     {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_focused_holo.9.png",
@@ -210,9 +222,5 @@
     {
         "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_user.png",
         "source": "D:\\XmChat\\app\\src\\main\\res\\drawable-hdpi\\login_user.png"
-    },
-    {
-        "merged": "D:\\XmChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_discover_icon.png",
-        "source": "D:\\XmChat\\app\\src\\main\\res\\drawable-hdpi\\tab_discover_icon.png"
     }
 ]

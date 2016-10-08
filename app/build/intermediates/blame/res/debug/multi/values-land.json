@@ -7,27 +7,8 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 60,
-                    "endOffset": 111
-                },
-                "from": {
-                    "file": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.roughike\\bottom-bar\\2.0.2\\res\\values-land\\values-land.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 60,
-                        "endOffset": 111
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 116,
                     "endColumn": 69,
-                    "endOffset": 181
+                    "endOffset": 120
                 },
                 "from": {
                     "file": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-land\\values-land.xml",
@@ -42,11 +23,11 @@
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 186,
+                    "startOffset": 125,
                     "endColumn": 63,
-                    "endOffset": 245
+                    "endOffset": 184
                 },
                 "from": {
                     "file": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-land\\values-land.xml",
@@ -61,11 +42,11 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 250,
+                    "startOffset": 189,
                     "endColumn": 70,
-                    "endOffset": 316
+                    "endOffset": 255
                 },
                 "from": {
                     "file": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-land\\values-land.xml",
@@ -80,11 +61,11 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 321,
+                    "startOffset": 260,
                     "endColumn": 67,
-                    "endOffset": 384
+                    "endOffset": 323
                 },
                 "from": {
                     "file": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\values-land\\values-land.xml",
@@ -94,27 +75,6 @@
                         "startOffset": 260,
                         "endColumn": 67,
                         "endOffset": 323
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 389,
-                    "endLine": 10,
-                    "endColumn": 12,
-                    "endOffset": 566
-                },
-                "from": {
-                    "file": "D:\\XmChat\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\values-land\\values-land.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endLine": 5,
-                        "endColumn": 12,
-                        "endOffset": 232
                     }
                 }
             }
